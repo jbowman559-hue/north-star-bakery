@@ -27,15 +27,17 @@
             <h2>Send Us a Request</h2>
             <p>Use this form to ask a question or send a preorder request.</p>
 
-            <form action="#" method="post">
+            <form id="contact-form" action="#" method="post" novalidate>
                 <fieldset>
                     <legend>Customer Information</legend>
 
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
+                    <p id="name-error" class="error-message"></p>
 
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
+                    <p id="email-error" class="error-message"></p>
 
                     <label for="pickup-date">Pickup Date:</label>
                     <input type="date" id="pickup-date" name="pickup-date" required>
@@ -58,12 +60,14 @@
 
                     <label for="item-details">Item Details:</label>
                     <textarea id="item-details" name="item-details" rows="5" required></textarea>
+                    <p id="details-error" class="error-message"></p>
 
                     <label for="allergy-notes">Allergy Notes (if applicable):</label>
                     <textarea id="allergy-notes" name="allergy-notes" rows="4"></textarea>
                 </fieldset>
 
                 <button type="submit">Submit Request</button>
+                <p id="form-message" class="success-message" aria-live="polite"></p>
             </form>
         </section>
 
@@ -84,5 +88,6 @@
         <p>&copy; 2026 North Star Bakery</p>
         <p><a href="contact.html">Contact North Star Bakery</a></p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

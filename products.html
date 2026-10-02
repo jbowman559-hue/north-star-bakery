@@ -50,11 +50,26 @@
                 <p>We make cakes for birthdays and other events. The price depends on the size and what you want. Special orders should be made ahead of time.</p>
             </section>
         </div>
+
+        <section class="favorite-box">
+            <h2>Pick Your Favorite Bakery Item</h2>
+            <p>Choose an item you like and save it for your next visit.</p>
+            <label for="favorite-item">Favorite item:</label>
+            <select id="favorite-item">
+                <option value="">Choose an item</option>
+                <option value="Signature Loaf">Signature Loaf</option>
+                <option value="Pastries">Pastries</option>
+                <option value="Cake">Cake</option>
+            </select>
+            <button type="button" id="save-favorite">Save Favorite</button>
+            <p id="favorite-result" class="favorite-result" aria-live="polite">No favorite saved yet.</p>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2026 North Star Bakery</p>
         <p><a href="contact.html">Contact North Star Bakery</a></p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
